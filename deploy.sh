@@ -1,6 +1,6 @@
 docker build -t dezarr/multi-client:latest -t dezarr/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t dezarr/multi-server:latest -t dezarr/multi-server:$SHA -f ./server/Dockerfile ./server
-dooker build -t dezarr/multi-worker:latest -t dezarr/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t dezarr/multi-worker:latest -t dezarr/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dezarr/multi-client:latest
 docker push dezarr/multi-server:latest
